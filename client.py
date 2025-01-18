@@ -1,8 +1,7 @@
 from geopy.geocoders import Nominatim
 import csv
-
 print("========================================================================")
-print("This tool is for reporting infrastructure damage to emergency responce crews.\nIf you or someone you know is experiencing an emergency, call emergency services.")
+print("This tool is for reporting infrastructure damage to emergency response crews.\nIf you or someone you know is experiencing an emergency, call emergency services.")
 print("========================================================================")
 
 #get user address using geopy
@@ -14,6 +13,7 @@ while True:
         geolocator = Nominatim(user_agent="UTEK25")
         location = geolocator.geocode(query=address,addressdetails=True)
 
+        #verify address
         print("Is your address " + location.address + " (Y/N)\n")
         roadCorrect = input()
         if roadCorrect == 'Y' or roadCorrect == 'y' or roadCorrect == 'yes':
