@@ -1,4 +1,4 @@
-"# UTEK25 Team 13 Submission"
+# UTEK25 Team 13 Submission
 The disaster scenario chosen was the earthquake scenario. The communication focus area is damage reporting. The files provided are a demo featuring what would make up an effective damage reporting tool for civilians to communicate to emergency response. Civilians will install an app which allows them to report damage, and emergency response teams will have their own app that allows them to view areas with the most impact on people. The demo is not a complete full stack app due to time restriction, and it could be implemented in real life as a server with django. Flask, React and many other front end tools could be used to create a more user-friendly civilian and emergency response app. The database could also be replaced with an actual SQL database as a better practice. The area of Los Angeles was selected as a test case, but this program can easily be adapted to any region.
 
 ##Libraries Used
