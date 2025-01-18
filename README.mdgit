@@ -1,0 +1,2 @@
+"# UTEK25"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/bombsboom/UTEK25.gitgit push -u origin main
+"# UTEK25"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/bombsboom/UTEK25.gitgit push -u origin main
