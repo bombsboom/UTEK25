@@ -12,7 +12,7 @@ while True:
         address = input()
 
         geolocator = Nominatim(user_agent="UTEK25")
-        location = geolocator.geocode(address)
+        location = geolocator.geocode(query=address,addressdetails=True)
 
         print("Is your address " + location.address + " (Y/N)\n")
         roadCorrect = input()
@@ -69,9 +69,9 @@ else:
 
 
 #write data to database
-data = [latlng[0],latlng[1],road,building,water,electricity,gas]
+data = [latlng[0],latlng[1],road,building,water,electricity,gas,location.raw['address']['postcode']]
 
-with open('reports.csv', 'a', newline='') as file:
+with open('reports.csv', 'a', newline='\n') as file:
     writer = csv.writer(file)   
     writer.writerow(data)
 
